@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.2.1",
     "autoprefixer": "^10.4.11",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "firebase": "^9.10.0",
     "framer-motion": "^7.3.5",
     "postcss": "^8.4.16",
