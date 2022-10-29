@@ -1,15 +1,15 @@
-
 import {getApp, getApps, initializeApp} from 'firebase/app'
 import {getStorage} from 'firebase/storage'
-
+console.log(process.env);
 const firebaseConfig = { 
-    apiKey : "AIzaSyBMiz-wgPw5F59E1_KR4-IptMXnHMhFxPg", 
-    authDomain : "projectmusicapp-ab013.firebaseapp.com", 
-    projectId : "projectmusicapp-ab013", 
-    storageBucket : "projectmusicapp-ab013.appspot.com", 
-    messagingSenderId : "287330540385", 
-    appId : "1:287330540385:web:643da1149d09e7e8b28320" 
+    apiKey : process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain : process.env.REACT_APP_FIREBASE_AUTH_DOMAIN, 
+    projectId : process.env.REACT_APP_FIREBASE_PROJECT_ID, 
+    storageBucket : process.env.REACT_APP_FIREBASE_STORAGE_BUCCKET, 
+    messagingSenderId : process.env.REACT_APP_FIREBASE_MESSAGIN_ID, 
+    appId : process.env.REACT_APP_FIREBASE_APPI_ID 
 };
+console.log(firebaseConfig.apiKey);
 
 const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
 const storage = getStorage(app);
