@@ -2,5 +2,6 @@
     "cSpell.ignoreWords": [
         "APPI"
     ],
-    "cSpell.enabled": false
+    "cSpell.enabled": false,
+    "explorer.compactFolders": false
 }
